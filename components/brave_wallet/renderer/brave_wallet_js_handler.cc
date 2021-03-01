@@ -5,8 +5,6 @@
 
 #include "brave/components/brave_wallet/renderer/brave_wallet_js_handler.h"
 
-#include <string>
-
 #include "base/no_destructor.h"
 #include "base/strings/utf_string_conversions.h"
 #include "brave/components/brave_wallet/resources/grit/brave_wallet_script_generated_map.h"
@@ -32,7 +30,7 @@ std::string LoadDataResource(const int id) {
   return resource_bundle.GetRawDataResource(id).as_string();
 }
 
-}
+}  // namespace
 
 namespace brave_wallet {
 

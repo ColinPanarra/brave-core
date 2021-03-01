@@ -6,6 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_WALLET_RENDERER_BRAVE_WALLET_JS_HANDLER_H_
 #define BRAVE_COMPONENTS_BRAVE_WALLET_RENDERER_BRAVE_WALLET_JS_HANDLER_H_
 
+#include <string>
+
 #include "content/public/renderer/render_frame.h"
 #include "url/gurl.h"
 #include "v8/include/v8.h"
@@ -14,7 +16,7 @@ namespace brave_wallet {
 
 class BraveWalletJSHandler {
  public:
-  BraveWalletJSHandler(content::RenderFrame* render_frame);
+  explicit BraveWalletJSHandler(content::RenderFrame* render_frame);
   ~BraveWalletJSHandler();
 
   void AddJavaScriptObjectToFrame(v8::Local<v8::Context> context);
